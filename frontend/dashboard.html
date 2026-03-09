@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Task Dashboard</h1>
+
+<button onclick="logout()">Logout</button>
+
+<h3>Create Task</h3>
+
+<input type="text" id="title" placeholder="Task Title">
+<br><br>
+
+<input type="text" id="description" placeholder="Description">
+<br><br>
+
+<select id="priority">
+  <option value="low">Low</option>
+  <option value="medium">Medium</option>
+  <option value="high">High</option>
+</select>
+
+<br><br>
+
+<button onclick="createTask()">Add Task</button>
+
+<h3>Your Tasks</h3>
+
+<ul id="taskList"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
